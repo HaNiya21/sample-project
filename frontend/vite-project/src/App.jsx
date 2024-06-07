@@ -1,27 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import ListingPage from './pages/Listing';
 import DetailPage from './pages/Detail';
 
 // Create an Apollo Client
 const client = new ApolloClient({
-  uri: 'YOUR_GRAPHQL_ENDPOINT', // Replace this with your GraphQL endpoint
+  uri: 'http://localhost:4000', 
   cache: new InMemoryCache()
 });
 
-// Define the GraphQL query to fetch client data
-const GET_CLIENTS = gql`
-  query GetClients {
-    clients {
-      id
-      name
-      age
-    }
-  }
-`;
-
-// App component
 function App() {
   return (
     <ApolloProvider client={client}>

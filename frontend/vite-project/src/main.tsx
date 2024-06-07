@@ -1,16 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App'; // Import App component
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
 
-const client = new ApolloClient({
-  uri: 'http://localhost:4000', // Your GraphQL server URL
-  cache: new InMemoryCache()
-});
-
-ReactDOM.render(
-  <ApolloProvider client={client}>
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
     <App />
-  </ApolloProvider>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
