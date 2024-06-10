@@ -1,10 +1,13 @@
 **Project Title**
+
 GraphQL-Powered Client Management System
 
 **Description**
+
 This project is a full-stack application developed with Node.js, GraphQL, React, and Apollo Client. The backend utilizes Node.js with Apollo Server to create a GraphQL API, while the frontend is built using React with Apollo Client and Vite. The project includes an Apollo Server that serves client data from a JSON file, a React frontend that fetches and displays data, and navigation between listing and detail pages using React Router. The project adheres to clean code practices and is fully documented. The instructions for this project were pulled from the[BLEN Corp sample project repository.](https://github.com/blencorp/sample-project.git)
 
 **Detailed Description About the Project Overview**
+
 This project consists of a full-stack application built with Node.js, GraphQL, React, and Apollo Client. The backend is developed using Node.js with Apollo Server to create a GraphQL API, while the frontend is created using React with Apollo Client and Vite.
 
 **Backend Setup**
